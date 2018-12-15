@@ -1,0 +1,224 @@
+
+.main {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 4%;
+  margin-bottom: 3%;
+  float: left;
+  width: 90%;
+  -webkit-box-shadow: 0px 5px 10px -2px rgba(163, 157, 163, 1);
+  -moz-box-shadow: 0px 5px 10px -2px rgba(163, 157, 163, 1);
+  box-shadow: 0px 5px 10px -2px rgba(163, 157, 163, 1);
+}
+
+#card {
+  margin: 2% 2% 5% 2%;
+  float: left;
+  width: 40%;
+  min-width: 350px;
+  max-width: 420px;
+  height: 250px;
+  border-radius: 10px;
+  background: #fafafa;
+  -webkit-box-shadow: 0px 6px 16px 0px rgba(163, 157, 163, 1);
+  -moz-box-shadow: 0px 6px 16px 0px rgba(163, 157, 163, 1);
+  box-shadow: 0px 6px 16px 0px rgba(163, 157, 163, 1);
+}
+
+.main #card #credit_cards {
+  margin-top: 7px;
+  margin-left: 60%;
+}
+
+.main #card #card-number-field #cardNumber {
+  width: 90%;
+  margin: 40px 5% 5% 5%
+}
+
+.main #card #expiration-date #date {
+  margin-left: 5%;
+  width: 110px;
+
+}
+
+.main #card #expiration-date {
+  display: inline;
+}
+
+.main #card #cvv #cvv {
+  width: 80px;
+}
+
+.main #card #cvv {
+  margin-left: 40px;
+  display: inline;
+}
+
+.form-control {
+  height: 30px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+#credit_cards i {
+  margin: 0 1% 0 1%
+}
+
+#payment {
+  display: block;
+  float: left;
+  margin: 2% 10% 0 10%;
+}
+
+#payment form div label {
+  font-weight: bold;
+}
+
+#payment form div {
+  margin-bottom: 10%;
+}
+
+#payment form div input {
+  width: 300px;
+}
+
+#payment_summ {
+  margin-left: 108px;
+}
+
+#payment_comment {
+  margin-left: 52px;
+}
+
+#payment_mail {
+  margin-left: 48px;
+}
+
+.aqua-button:after,
+.aqua-button:before {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  left: 0;
+  right: 0;
+  height: 16px;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  content: "";
+  border-color: #231f20;
+}
+
+.aqua-button:before {
+  top: 0;
+  border-top: 2px solid;
+}
+
+.aqua-button:after {
+  bottom: 0;
+  border-bottom: 2px solid;
+}
+
+.aqua-button__bg,
+.aqua-button__bg-opacity {
+  -webkit-transition: opacity .3s ease-in-out .2s;
+  -o-transition: opacity .3s ease-in-out .2s;
+  transition: opacity .3s ease-in-out .2s;
+}
+
+.aqua-button__bg {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  right: 0;
+  bottom: -8px;
+  background: url(https://tochka.com/theme/main/img/button/button_1.png) left 5px no-repeat;
+  background-size: 100% 100%;
+  opacity: .6;
+}
+
+.aqua-button {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.aqua-button__title {
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 30px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #231f20;
+  z-index: 1;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.aqua-button__title {
+  padding: 15px 35px;
+}
+
+@media (max-width: 1297px) {
+  #payment {
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 1162px) {
+
+  #payment {
+    margin-left: 12%;
+  }
+
+  #card {
+    margin: 2% 2% 5% 20%;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+  #payment form div input {
+    width: 200px;
+  }
+
+  #payment_summ {
+    margin-left: 88px;
+  }
+
+  #payment_comment {
+    margin-left: 32px;
+  }
+
+  #payment_mail {
+    margin-left: 28px;
+  }
+
+  .main {
+    width: 100%;
+    min-width: 470px;
+  }
+
+  #card {
+    margin: 2% 2% 5% 10%;
+  }
+
+  #payment {
+    float: left;
+    margin: 2% auto 2% 7%;
+    min-width: 470px;
+  }
+
+  .aqua-button {
+    float: right;
+    margin-right: 25%;
+  }
+}

@@ -1,20 +1,88 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="header">
+  <div id="info">
+    <h3>Индивидуальный предприниматель Швецова Мария Валерьевна</h3><br>
+    <div id="main_info">
+      <span id="telefon">+79049870727</span>
+      <a href="www.mary.com">www.mary.com</a>
+      <a href="mailto:mary@tochka.com">mary@tochka.com</a>
+    </div>
+    <div id="hiden_info">
+      <div id="about_company">
+        <details>
+          <summary>Информация о компании</summary>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam placeat, aliquid, atque, quo qui quam aspernatur velit quisquam et minus possimus eum, optio sequi minima esse nisi similique voluptatibus laudantium!</p>
+        </details>
+      </div>
+      <div id="details">
+        <details>
+          <summary>Показать реквизиты</summary>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam placeat, aliquid, atque, quo qui quam aspernatur velit quisquam et minus possimus eum, optio sequi minima esse nisi similique voluptatibus laudantium!</p>
+        </details>
+      </div>
+    </div>
 
+  </div>
+  <div id="customer_img">
+    <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/f5/c7/98/f5c79856-ff84-d9f4-2cad-593ca6be6ea9/AppIcon-1x_U007emarketing-85-220-6.png/246x0w.jpg" alt="Ваша фотография">
+  </div>
+</div>
+
+<app-pay></app-pay>
+
+<div class="customer_services">
+  <div id="company_name">
+    <span>О компании Индивидульный предприниматель Швецова Мария Валерьевна</span>
+  </div>
+  <div class="service">
+    <div class="img_container"><img src="https://www.thailand-trip.org/wp-content/uploads/2016/01/plyazh_tri_trang_beach_na_phukete.jpg" alt="Услуга препринимателя"><br></div>
+    <div id="service_discription">
+      <h3>Какая-то птица №1</h3><br>
+    </div>
+    <div id="service_price">
+      <h3>138 рублей</h3><br>
+    </div>
+
+  </div>
+  <div class="service">
+    <div class="img_container"><img src="https://www.thailand-trip.org/wp-content/uploads/2016/01/plyazh_tri_trang_beach_na_phukete.jpg" alt="Услуга препринимателя"><br></div>
+
+    <div id="service_discription">
+      <h3>Какая-то птица №2</h3><br>
+    </div>
+    <div id="service_price">
+      <h3>50 рублей</h3><br>
+    </div>
+  </div>
+  <div class="service">
+    <div class="img_container"><img src="https://www.thailand-trip.org/wp-content/uploads/2016/01/plyazh_tri_trang_beach_na_phukete.jpg" alt="Услуга препринимателя"><br></div>
+    <div id="service_discription">
+      <h3>Какая-то птица №2</h3><br>
+    </div>
+    <div id="service_price">
+      <h3>50 рублей</h3><br>
+    </div>
+  </div>
+  <div class="service">
+    <div class="img_container"><img src="https://www.thailand-trip.org/wp-content/uploads/2016/01/plyazh_tri_trang_beach_na_phukete.jpg" alt="Услуга препринимателя"><br></div>
+    <div id="service_discription">
+      <h3>Какая-то птица №2</h3><br>
+    </div>
+    <div id="service_price">
+      <h3>50 рублей</h3><br>
+    </div>
+  </div>
+
+</div>
+
+<span class="textarea" [class.textarea--hidden]="!isMoreShow">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis officiis voluptatibus unde placeat quisquam. Explicabo recusandae laboriosam possimus consequuntur veniam, deleniti dolor veritatis praesentium. Itaque, illo! Id voluptatibus dolorem commodi itaque, amet. Assumenda, neque officia. Voluptatem labore hic voluptas incidunt ullam debitis iste minima rerum quo tenetur, vitae quaerat provident, soluta sunt doloremque aliquid molestiae dolor cupiditate ex. Vitae assumenda voluptatibus, sequi. Ipsa quam hic quis, fugiat voluptatibus ipsum quod quibusdam blanditiis, labore, at voluptates. Enim itaque voluptatum, ex illum? Laudantium cupiditate dicta rerum, alias odio minima qui. Accusamus dolore fugiat excepturi dolor ipsa dicta voluptates vero perferendis saepe quaerat, maxime, nisi. Qui sunt, vitae delectus culpa similique molestias ex quasi totam facere expedita odio inventore cumque, placeat quia non?
+        </span>
+<span class="show-more" (click)="isMoreShow=true" [hidden]="isMoreShow" > Показать еще </span>
+<span class="hide" (click)="isMoreShow=false" [hidden]="!isMoreShow"> Спрятать </span>
+
+<div class="full_info_about_service">
+
+</div>
+
+<div class="footer">
+</div>

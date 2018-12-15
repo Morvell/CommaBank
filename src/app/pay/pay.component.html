@@ -1,0 +1,16 @@
+<div class="pay-card-nav">
+  <div class="nav">
+    <a routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}"
+    >
+    <i class="fa fa-credit-card fa-fw fa-1x"></i>
+      <span>С карты любого банка</span></a></div>
+  <div class="nav">
+    <a routerLink="/payYouBank"
+       routerLinkActive="active">
+      <i class="fa fa-desktop fa-fw fa-1x"></i>
+      <span>Из своего интернет-банка</span></a></div>
+</div>
+
+<router-outlet></router-outlet>

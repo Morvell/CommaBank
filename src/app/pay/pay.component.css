@@ -1,0 +1,36 @@
+.nav a{
+  text-decoration: none;
+}
+
+.pay-card-nav {
+  margin-left: 5%;
+}
+
+.nav {
+  display: inline-block;
+  margin-right: 0.5%;
+}
+
+a {
+  background-color: transparent;
+  color: black;
+  padding: 0.8em;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #E8E8EE;
+}
+
+a:hover {
+  background-color: #f7f7f7;
+}
+
+a:active {
+  background-color: black;
+}
+
+a:visited {
+  background-color: transparent;
+}
+
